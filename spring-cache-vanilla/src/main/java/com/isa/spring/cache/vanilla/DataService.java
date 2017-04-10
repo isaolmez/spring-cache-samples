@@ -7,5 +7,5 @@ public interface DataService {
 
     void delete(String key);
 
-    int getCount();
+    int getAccessCount();
 }

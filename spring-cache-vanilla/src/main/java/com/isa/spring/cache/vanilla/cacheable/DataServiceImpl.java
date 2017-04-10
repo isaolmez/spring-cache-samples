@@ -37,7 +37,7 @@ public class DataServiceImpl implements DataService {
     }
 
     @Override
-    public int getCount() {
+    public int getAccessCount() {
         return accessCount.get();
     }
 }

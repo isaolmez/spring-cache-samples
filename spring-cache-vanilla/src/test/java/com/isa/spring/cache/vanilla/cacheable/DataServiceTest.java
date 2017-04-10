@@ -28,7 +28,7 @@ public class DataServiceTest {
         dataService.get(key);
         dataService.get(key);
 
-        int actualAccessCount = dataService.getCount();
+        int actualAccessCount = dataService.getAccessCount();
 
         assertEquals(expectedAccessCount, actualAccessCount);
     }
