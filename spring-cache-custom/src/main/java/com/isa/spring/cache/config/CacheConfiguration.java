@@ -31,7 +31,6 @@ public class CacheConfiguration extends CachingConfigurerSupport {
     }
 
     @Bean
-    @Primary
     @Override
     public CacheManager cacheManager() {
         SimpleCacheManager cacheManager = new SimpleCacheManager();

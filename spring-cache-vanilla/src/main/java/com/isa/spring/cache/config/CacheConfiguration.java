@@ -27,7 +27,6 @@ public class CacheConfiguration extends CachingConfigurerSupport {
     }
 
     @Bean
-    @Primary
     @Override
     public CacheManager cacheManager() {
         if (cacheProperties.isEnabled()) {

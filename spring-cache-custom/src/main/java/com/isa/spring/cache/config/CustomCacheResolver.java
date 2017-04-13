@@ -1,11 +1,9 @@
 package com.isa.spring.cache.config;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.Cache;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.interceptor.CacheOperationInvocationContext;
 import org.springframework.cache.interceptor.CacheResolver;
-import org.springframework.cache.support.NoOpCacheManager;
 
 import java.util.ArrayList;
 import java.util.Collection;
