@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.isa</groupId>
-    <artifactId>spring.cache.vanilla</artifactId>
+    <artifactId>spring.cache.memcached</artifactId>
     <version>1.0-SNAPSHOT</version>
     <!-- Properties -->
     <properties>
@@ -27,6 +27,23 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Memcached for Basic Distributed Cache -->
+        <dependency>
+            <groupId>net.spy</groupId>
+            <artifactId>spymemcached</artifactId>
+            <version>2.10.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.simple-spring-memcached</groupId>
+            <artifactId>spring-cache</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.simple-spring-memcached</groupId>
+            <artifactId>xmemcached-provider</artifactId>
+            <version>3.1.0</version>
         </dependency>
 
         <!-- Slf4j -->
@@ -74,4 +91,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
