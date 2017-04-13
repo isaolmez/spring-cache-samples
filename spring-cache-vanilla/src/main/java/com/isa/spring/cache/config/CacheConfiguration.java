@@ -39,7 +39,10 @@ public class CacheConfiguration extends CachingConfigurerSupport {
 
     private CacheManager simpleCacheManager(){
         SimpleCacheManager cacheManager = new SimpleCacheManager();
-        List<ConcurrentMapCache> caches = Arrays.stream(cacheProperties.getCacheNames()).map(cacheName -> new ConcurrentMapCache(cacheName)).collect(Collectors.toList());
+        List<ConcurrentMapCache> caches = cacheProperties.getCacheNameList()
+                .stream()
+                .map(cacheName -> new ConcurrentMapCache(cacheName))
+                .collect(Collectors.toList());
         cacheManager.setCaches(caches);
         return cacheManager;
     }
